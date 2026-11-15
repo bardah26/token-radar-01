@@ -1,0 +1,39 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #0b1220; color: #e6edf7; font: 15px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.top { padding: 20px 24px 8px; }
+.top h1 { margin: 0 0 4px; font-size: 26px; }
+.sub { margin: 0; color: #8fa3c0; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 24px; }
+.controls input, .controls select { background: #111c33; color: #e6edf7; border: 1px solid #24365c; border-radius: 6px; padding: 8px 10px; font: inherit; }
+.controls input[type="search"] { flex: 1 1 220px; }
+.watch-toggle { display: flex; align-items: center; gap: 6px; color: #c8d6ea; }
+main { padding: 0 24px 24px; }
+table { width: 100%; table-layout: fixed; border-collapse: collapse; background: #0f1930; border: 1px solid #1d2c4d; }
+th:nth-child(1) { width: 58px; }
+th:nth-child(3) { width: 128px; }
+th:nth-child(4) { width: 230px; }
+th:nth-child(5) { width: 92px; }
+th:nth-child(6) { width: 82px; }
+th:nth-child(7) { width: 108px; }
+th:nth-child(8) { width: 58px; }
+th, td { padding: 6px 10px; text-align: left; border-bottom: 1px solid #1d2c4d; vertical-align: top; overflow-wrap: break-word; }
+th { color: #8fa3c0; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+th:nth-child(5), th:nth-child(6), th:nth-child(7), th:nth-child(8), td:nth-child(5), td:nth-child(6), td:nth-child(7), td:nth-child(8) { text-align: right; white-space: nowrap; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: #16233f; }
+tbody tr.watch td:first-child { color: #f59e0b; }
+.slug { display: block; color: #8fa3c0; font-size: 12px; }
+.up { color: #10b981; }
+.down { color: #f87171; }
+#count { color: #8fa3c0; font-size: 13px; }
+#detail { margin-top: 16px; background: #0f1930; border: 1px solid #1d2c4d; border-radius: 8px; padding: 16px 20px; }
+#detail h2 { margin: 0 0 4px; }
+#detail .meta { color: #8fa3c0; margin: 0 0 12px; }
+#detail dl { display: grid; grid-template-columns: 180px 1fr; gap: 4px 12px; margin: 12px 0; }
+#detail dt { color: #8fa3c0; }
+#detail dd { margin: 0; }
+#detail .model { background: #111c33; border-left: 3px solid #10b981; padding: 10px 12px; }
+#detail ol li { margin-bottom: 8px; }
+#detail a { color: #10b981; }
+footer { padding: 0 24px 24px; color: #8fa3c0; font-size: 13px; }

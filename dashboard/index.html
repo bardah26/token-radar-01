@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Launch Radar</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+<h1>Token Launch Radar</h1>
+<p class="sub">Pre-token protocols ranked by implied launch value. Snapshot <span id="asof">—</span> · <span id="rowcount">—</span> rows. Every protocol listed records no token.</p>
+</header>
+<section class="controls">
+<input id="q" type="search" placeholder="Search name or slug" aria-label="Search">
+<select id="category" aria-label="Category"><option value="">All categories</option></select>
+<select id="chain" aria-label="Chain"><option value="">All chains</option></select>
+<label class="watch-toggle"><input id="watchlist" type="checkbox"> Watchlist only</label>
+<select id="sort" aria-label="Sort">
+<option value="rank">Sort: rank</option>
+<option value="implied">Sort: implied value</option>
+<option value="tvl">Sort: TVL</option>
+<option value="change_7d">Sort: 7d change</option>
+<option value="age">Sort: age</option>
+</select>
+</section>
+<main>
+<section id="detail" hidden></section>
+<table>
+<thead><tr><th>Rank</th><th>Protocol</th><th>Category</th><th>Chains</th><th>TVL</th><th>7d</th><th>Implied value</th><th>Age</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+<p id="count"></p>
+</main>
+<footer>
+<p>Method: implied value = TVL × category multiple × growth × age. The category multiple is the median market-cap / TVL of listed protocols in the same category (global median when fewer than three samples). Growth follows the 7-day change; age adds up to 20% over five years. The board lists farmable protocols only: wrapped, staked or bridged products and CEX are excluded, the same rule as the watchlist. Ranking is deterministic. Data: public snapshot. superbot.gg</p>
+</footer>
+<script src="steps.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
